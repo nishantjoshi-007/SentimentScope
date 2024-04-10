@@ -14,14 +14,12 @@ server = app.server
 # Extract necessary data for the layout
 min_sentiment_score = df['Sentiment'].min()
 max_sentiment_score = df['Sentiment'].max()
-min_subjectivity_score = df['Subjectivity'].min()  # Corrected from max to min
+min_subjectivity_score = df['Subjectivity'].min()
 max_subjectivity_score = df['Subjectivity'].max()
 all_months = df['Month'].unique()
 
-# Set the app layout
 app.layout = create_layout(min_sentiment_score, max_sentiment_score, min_subjectivity_score, max_subjectivity_score, all_months)
 
-# Callback for updating scatter plot based on selections
 @app.callback(
     Output('scatter-plot', 'figure'),
     [Input('month-dropdown', 'value'),
@@ -29,13 +27,10 @@ app.layout = create_layout(min_sentiment_score, max_sentiment_score, min_subject
      Input('subjectivity-slider', 'value')]
 )
 def update_scatter_plot(selected_month, sentiment_range, subjectivity_range):
-    # Check if 'All' is selected or no month is selected, and adjust the filter accordingly
     if selected_month == 'All' or selected_month is None:
         filtered_df = df.copy()
     else:
         filtered_df = df[df['Month'] == selected_month]
-
-    # Apply sentiment and subjectivity filters
     filtered_df = filtered_df[
         (filtered_df['Sentiment'] >= sentiment_range[0]) & (filtered_df['Sentiment'] <= sentiment_range[1]) &
         (filtered_df['Subjectivity'] >= subjectivity_range[0]) & (filtered_df['Subjectivity'] <= subjectivity_range[1])

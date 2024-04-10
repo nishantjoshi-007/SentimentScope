@@ -1,5 +1,3 @@
-/* Improved styling for a more fancy and colorful Dash app */
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: #f0f2f5;
@@ -10,7 +8,7 @@ body {
 
 h1, h3 {
     text-align: center;
-    color: #4A00E0;  /* Gradient text color */
+    color: #4A00E0;
     background: -webkit-linear-gradient(right, #8E2DE2, #4A00E0);
     -webkit-background-clip: text;
     background-clip: text;
@@ -18,7 +16,7 @@ h1, h3 {
 }
 
 .Div, .RangeSlider, .Graph {
-    background: #FFFFFF; /* White background */
+    background: #FFFFFF;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -27,7 +25,7 @@ h1, h3 {
 }
 
 .Graph {
-    border: 1px solid #ddd; /* Light grey border */
+    border: 1px solid #ddd;
 }
 
 #selected-data {
