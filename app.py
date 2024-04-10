@@ -2,7 +2,7 @@ import dash
 from dash import dcc, html, Input, Output, callback, callback_context
 import pandas as pd
 import plotly.express as px
-from src.layout import create_layout  # Ensure correct import path
+from src.layout import create_layout
 
 # Load the dataset
 df = pd.read_csv('./data/ProcessedTweets.csv')
@@ -62,21 +62,13 @@ def update_scatter_plot(selected_month, sentiment_range, subjectivity_range):
     [Input('scatter-plot', 'selectedData')]
 )
 def display_selected_data(selectedData):
-    # Check if there is any data selected
     if selectedData is None or not selectedData['points']:
         return 'Select points using the lasso tool to see the raw tweets.'
-
-    # Extract the indices of the selected points
     indices = [point['pointIndex'] for point in selectedData['points']]
-
-    # Filter the DataFrame based on these indices and extract only the RawTweet column
     selected_tweets = df.iloc[indices]['RawTweet']
-
-    # Create a list of Divs for each selected RawTweet
     tweets_div = [html.Div(tweet, style={'padding': '5px', 'border-bottom': '1px solid #ddd'}) for tweet in selected_tweets]
-
     return tweets_div
 
 # Run the app
 if __name__ == '__main__':
-    app.run_server(debug=True)  # Set debug=False for production
+    app.run_server(debug=False)

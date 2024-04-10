@@ -1,0 +1,6 @@
+Babel
+dash
+pandas
+pandas-stubs
+plotly
+gunicorn
