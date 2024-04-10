@@ -21,15 +21,7 @@ all_months = df['Month'].unique()
 # Set the app layout
 app.layout = create_layout(min_sentiment_score, max_sentiment_score, min_subjectivity_score, max_subjectivity_score, all_months)
 
-# Add a Loading component around the scatter plot
-app.layout.children.append(
-    Loading(
-        id="loading-1",
-        type="default",  # You can choose from "graph", "cube", "circle", "dot", or "default"
-        children=html.Div(id="loading-output-1")
-    )
-)
-
+# Callback for updating scatter plot based on selections
 @app.callback(
     Output('scatter-plot', 'figure'),
     [Input('month-dropdown', 'value'),
