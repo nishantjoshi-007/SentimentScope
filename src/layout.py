@@ -2,7 +2,7 @@ from dash import html, dcc
 
 def create_layout(min_sentiment_score, max_sentiment_score, min_subjectivity_score, max_subjectivity_score, all_months):
     return html.Div(children=[
-        html.H1('Twitter Data Dashboard', style={'textAlign': 'center'}),
+        html.H1('SentimentScope: Interactive Visualization of Twitter Sentiments and Subjectivity', style={'textAlign': 'center'}),
 
         # Month Selection Dropdown
         html.Div(children=[
