@@ -1,4 +1,4 @@
-# :star2: Dashboard for Twitter data
+# :star2: SentimentScope: Interactive Visualization of Twitter Sentiments and Subjectivity
 
 <div align='center'>
 
