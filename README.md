@@ -1,6 +1,4 @@
-# Dashboard for Twitter data
-
-## :star2: About the Project
+# :star2: Dashboard for Twitter data
 
 <div align='center'>
 
