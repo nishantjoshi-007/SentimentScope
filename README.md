@@ -41,7 +41,7 @@ pip install pandas
 
 Clone the project
 ```bash
-https://github.com/nishantjoshi-007/twitter_dashboard
+https://github.com/nishantjoshi-007/SentimentScope
 ```
 Go to project directory
 ```bash
