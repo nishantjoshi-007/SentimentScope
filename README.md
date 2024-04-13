@@ -57,4 +57,4 @@ python app.py
 
 ## :warning: License
 
-Distributed under the MIT License. See LICENSE.txt for more information.
+Distributed under the MIT License. See <a href="https://github.com/nishantjoshi-007/twitter_dashboard/LICENSE.txt">LICENSE.txt</a> for more information.
