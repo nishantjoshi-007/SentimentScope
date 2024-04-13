@@ -1,8 +1,5 @@
 # Dashboard for Twitter data
 
-## <a href=https://twitterassignment-65fa22aca58f.herokuapp.com/>Live Website</a>
-
-
 ## :star2: About the Project
 
 <div align='center'>
@@ -16,7 +13,7 @@
 
 # :notebook_with_decorative_cover: Table of Contents
 
-- [About the Project](#star2-about-the-project)
+- [Getting Started](#toolbox-getting-started)
 - [License](#warning-license)
 
 ## :toolbox: Getting Started
