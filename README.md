@@ -40,9 +40,12 @@ pip install pandas
 ### :running: Run Locally
 
 Clone the project
-
 ```bash
 https://github.com/nishantjoshi-007/twitter_dashboard
+```
+Go to project directory
+```bash
+cd SentimentScope
 ```
 To run this project
 ```bash
