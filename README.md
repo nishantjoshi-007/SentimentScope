@@ -1,48 +1,47 @@
 # :star2: SentimentScope: Interactive Visualization of Twitter Sentiments and Subjectivity
 
 <div align='center'>
-
-<p>This Dash-based web app provides an interactive visualization of Twitter data, focusing on sentiment and subjectivity metrics across different months. The dashboard features dropdown menus for month selection, range sliders for filtering tweets by sentiment and subjectivity scores, and a scatter plot for visualizing tweets based on dimensionality-reduced embedding representations. Users can interactively select points on the scatter plot to display corresponding tweet texts in a table, enabling detailed analysis of tweet characteristics over time. This project aims to identify trends and patterns in Twitter conversations, enhancing understanding of public sentiment and subjectivity in social media discourse.</p>
-
-<h4> <a href=https://twitterassignment-65fa22aca58f.herokuapp.com/>View Demo</a> <span> · </span> <a href="https://github.com/nishantjoshi-007/twitter_dashboard/blob/main/README.md"> Documentation </a> <span> · </span> <a href="https://github.com/nishantjoshi-007/twitter_dashboard/issues"> Report Bug </a> <span> · </span> <a href="https://github.com/nishantjoshi-007/twitter_dashboard/issues"> Request Feature </a> </h4>
-
+  
+<p>Welcome to the 'SentimentScope' GitHub repository! This project provides an interactive visualization of Twitter data, focusing on sentiment and subjectivity metrics across different months. The dashboard features dropdown menus for month selection, range sliders for filtering tweets by sentiment and subjectivity scores, and a scatter plot for visualizing tweets based on dimensionality-reduced embedding representations. Users can interactively select points on the scatter plot to display corresponding tweet texts in a table, enabling detailed analysis of tweet characteristics over time. This project aims to identify trends and patterns in Twitter conversations, enhancing understanding of public sentiment and subjectivity in social media discourse.</p>
+<h4> <a href=https://twitterassignment-65fa22aca58f.herokuapp.com/>Live Demo</a> <span> · </span> <a href="https://github.com/nishantjoshi-007/twitter_dashboard/issues"> Report Bug </a> <span> · </span> <a href="https://github.com/nishantjoshi-007/twitter_dashboard/issues"> Request Feature </a> </h4>
 
 </div>
 
 # :notebook_with_decorative_cover: Table of Contents
-
 - [Getting Started](#toolbox-getting-started)
+- [Contributing](#wave-contributing)
 - [License](#warning-license)
 
+
 ## :toolbox: Getting Started
-
 ### :bangbang: Prerequisites
-
 - Install Python in your computer<a href="https://www.python.org/downloads/"> Here</a>
+- Install VS code to run locally<a href="https://code.visualstudio.com/Download"> Here</a>
 
 
 ### :gear: Installation
+In VS code, First
+- ctrl+P For Windows
+- cmd+P For MacOs
 
-This project requires Dash
+Install Python Extension
 ```bash
-pip install dash
-```
-This project requires Plotly for visualization
-```bash
-pip install plotly
-```
-This project requires Pandas
-```bash
-pip install pandas
+ext install python
 ```
 
 
 ### :running: Run Locally
-
 Clone the project
-
 ```bash
-https://github.com/nishantjoshi-007/twitter_dashboard
+git clone https://github.com/nishantjoshi-007/SentimentScope
+```
+Go to project directory
+```bash
+cd SentimentScope
+```
+Install necessary libraries
+```bash
+pip install -r requirements.txt
 ```
 To run this project
 ```bash
@@ -50,6 +49,9 @@ python app.py
 ```
 
 
-## :warning: License
+## :wave: Contributing
+<img src="https://contrib.rocks/image?repo=Louis3797/awesome-readme-template" /> Contributions to the SentimentScope are always welcome! Whether it's reporting bugs, suggesting new features, or improving the code, your input is valuable. Please feel free to fork this repository, make your changes, and submit a pull request.
 
-Distributed under the MIT License. See <a href="https://github.com/nishantjoshi-007/twitter_dashboard/blob/main/LICENSE">LICENSE.txt</a> for more information.
+
+## :warning: License
+Distributed under the MIT License. See <a href="https://github.com/nishantjoshi-007/twitter_dashboard/blob/main/LICENSE">LICENSE</a> for more information.
