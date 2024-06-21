@@ -1,5 +1,5 @@
 import dash
-from dash import dcc, html, Input, Output, callback, callback_context
+from dash import html, Input, Output, callback, callback_context
 import pandas as pd
 import plotly.express as px
 from src.layout import create_layout
@@ -10,6 +10,9 @@ df = pd.read_csv('./data/ProcessedTweets.csv')
 # Initialize the Dash app
 app = dash.Dash(__name__)
 server = app.server
+
+app.title = 'SentimentScope'
+app._favicon = ("icon.ico")
 
 # Extract necessary data for the layout
 min_sentiment_score = df['Sentiment'].min()
